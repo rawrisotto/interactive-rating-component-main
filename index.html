@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <article>
+        <img src="./images/icon-star.svg" alt="Star Icon" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+        <h1 class="title">How did we do?</h1>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+        <p class="description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
 
-  <!-- Rating state start -->
+        <form class="rating-form">
+          <div class="rating-wrapper">
+            <input type="radio" id="1-star" name="rating" value="1" />
+            <label for="1-star">1</label>
 
-  How did we do?
+            <input type="radio" id="2-star" name="rating" value="2" />
+            <label for="2-star">2</label>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+            <input type="radio" id="3-star" name="rating" value="3" />
+            <label for="3-star">3</label>
 
-  1 2 3 4 5
+            <input type="radio" id="4-star" name="rating" value="4" />
+            <label for="4-star">4</label>
 
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+            <input type="radio" id="5-star" name="rating" value="5" />
+            <label for="5-star">5</label>
+          </div>
+          <button class="btn">SUBMIT</button>
+        </form>
+      </article>
+    </main>
+  </body>
 </html>
