@@ -1,0 +1,181 @@
+/* CSS RESET */
+/*
+    1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --clr-orange: hsl(25, 97%, 53%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-lightGrey: hsl(217, 12%, 63%);
+  --clr-mediumGrey: hsl(216, 12%, 24%);
+  --clr-darkBlue: hsl(213, 19%, 18%);
+  --clr-veryDarkBlue: hsl(216, 12%, 8%);
+
+  --ff-base: "Overpass", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+/* General Styling */
+html, body {
+  height: 100vh;
+  background: var(--clr-veryDarkBlue);
+  font-family: var(--ff-base);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Rating Styling */
+.rating-article {
+  background: var(--clr-darkBlue);
+  margin: 1.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+.center {
+  text-align: center;
+}
+
+#star-img {
+  background-color: var(--clr-veryDarkBlue);
+  padding: 0.825rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#thankyou-img {
+  width: 10rem;
+  margin: 1rem auto 1.5rem auto;
+}
+
+.title {
+  color: var(--clr-white);
+  font-size: 1.55rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: var(--clr-lightGrey);
+  /* font-size: 0.9375rem; */
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.rating-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rating-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.rating-wrapper label {
+  display: inline-block;
+  padding: 0.5rem 1rem; 
+  color: var(--clr-lightGrey);
+  border-radius: 50%;
+  background: var(--clr-veryDarkBlue);
+  cursor: pointer;
+}
+
+.rating-wrapper input[type="radio"] {
+  display: none;
+}
+
+.rating-wrapper input[type="radio"]:checked + label {
+  background: var(--clr-orange);
+  color: var(--clr-white);
+}
+
+.rating-wrapper input[type="radio"]:hover + label {
+  background-color: var(--clr-lightGrey);
+  color: var(--clr-white);
+}
+
+.btn {
+  background: var(--clr-orange);
+  padding: 0.625rem 0;
+  color: var(--clr-white);
+  border: none;
+  border-radius: 2rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--clr-white);
+  color: var(--clr-orange);
+}
+
+.rating-given {
+  background-color: var(--clr-mediumGrey);
+  width: fit-content;
+  margin: 0 auto 1.5rem auto;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5rem;
+  color: var(--clr-orange);
+}
