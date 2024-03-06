@@ -88,6 +88,7 @@ html, body {
   display: flex;
   flex-direction: column;
   border-radius: 1rem;
+  max-width: 410px;
 }
 
 .center {
@@ -95,7 +96,7 @@ html, body {
 }
 
 #star-img {
-  background-color: var(--clr-veryDarkBlue);
+  background-color: var(--clr-mediumGrey);
   padding: 0.825rem;
   border-radius: 50%;
   width: 2.5rem;
@@ -138,7 +139,7 @@ html, body {
   padding: 0.5rem 1rem; 
   color: var(--clr-lightGrey);
   border-radius: 50%;
-  background: var(--clr-veryDarkBlue);
+  background: var(--clr-mediumGrey);
   cursor: pointer;
 }
 
@@ -174,8 +175,8 @@ html, body {
 .rating-given {
   background-color: var(--clr-mediumGrey);
   width: fit-content;
-  margin: 0 auto 1.5rem auto;
-  padding: 0.5rem 0.75rem;
+  margin: 0 auto 2rem auto;
+  padding: 0.375rem 0.75rem;
   border-radius: 5rem;
   color: var(--clr-orange);
 }

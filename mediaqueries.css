@@ -1,0 +1,26 @@
+@media (min-width: 480px) {
+  .rating-article {
+    padding: 2rem;
+    border-radius: 1.5rem;
+  }
+
+  #star-img {
+    margin-bottom: 3rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .description {
+    font-size: 0.9375rem;
+  }
+
+  .rating-wrapper {
+    margin-bottom: 1.5rem;
+  }
+
+  .rating-wrapper label {
+    padding: 0.75rem 1.3rem;
+  }
+}
