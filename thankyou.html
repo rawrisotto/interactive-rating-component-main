@@ -34,5 +34,12 @@
         </p>
       </article>
     </main>
+    
+    <script>
+      const ratingGiven = document.querySelector(".rating-given");
+
+      const rating = localStorage.getItem("rating");
+      ratingGiven.textContent = `You have selected ${rating} out of 5`;
+    </script>
   </body>
 </html>

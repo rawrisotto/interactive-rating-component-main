@@ -17,7 +17,7 @@
     />
     <title>Frontend Mentor | Interactive rating component</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <main>
@@ -31,26 +31,36 @@
           is appreciated to help us improve our offering!
         </p>
 
-        <form class="rating-form">
-          <div class="rating-wrapper">
-            <input type="radio" id="1-star" name="rating" value="1" />
-            <label for="1-star">1</label>
+        <div class="rating-wrapper">
+          <input type="radio" id="1-star" name="rating" value="1" />
+          <label for="1-star">1</label>
 
-            <input type="radio" id="2-star" name="rating" value="2" />
-            <label for="2-star">2</label>
+          <input type="radio" id="2-star" name="rating" value="2" />
+          <label for="2-star">2</label>
 
-            <input type="radio" id="3-star" name="rating" value="3" />
-            <label for="3-star">3</label>
+          <input type="radio" id="3-star" name="rating" value="3" />
+          <label for="3-star">3</label>
 
-            <input type="radio" id="4-star" name="rating" value="4" />
-            <label for="4-star">4</label>
+          <input type="radio" id="4-star" name="rating" value="4" />
+          <label for="4-star">4</label>
 
-            <input type="radio" id="5-star" name="rating" value="5" />
-            <label for="5-star">5</label>
-          </div>
-          <button class="btn">SUBMIT</button>
-        </form>
+          <input type="radio" id="5-star" name="rating" value="5" />
+          <label for="5-star">5</label>
+        </div>
+        <button type="submit" class="btn" id="submit">SUBMIT</button>
       </article>
     </main>
+
+    <script>
+      const submitButton = document.querySelector("#submit");
+
+      submitButton.addEventListener("click", () => {
+        const rating = document.querySelector(
+          'input[name="rating"]:checked'
+        ).value;
+        localStorage.setItem("rating", rating);
+        window.location.href = "thankyou.html";
+      });
+    </script>
   </body>
 </html>
